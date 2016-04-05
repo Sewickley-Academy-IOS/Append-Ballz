@@ -14,6 +14,7 @@
 		969F8E9E1CB412BA00E1F10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969F8E9C1CB412BA00E1F10F /* LaunchScreen.storyboard */; };
 		969F8EA91CB412BA00E1F10F /* AppendBallzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F8EA81CB412BA00E1F10F /* AppendBallzTests.swift */; };
 		969F8EB41CB412BA00E1F10F /* AppendBallzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F8EB31CB412BA00E1F10F /* AppendBallzUITests.swift */; };
+		969F8EC41CB418EF00E1F10F /* BouncingBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F8EC31CB418EF00E1F10F /* BouncingBall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		969F8EAF1CB412BA00E1F10F /* AppendBallzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppendBallzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		969F8EB31CB412BA00E1F10F /* AppendBallzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppendBallzUITests.swift; sourceTree = "<group>"; };
 		969F8EB51CB412BA00E1F10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969F8EC31CB418EF00E1F10F /* BouncingBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncingBall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				969F8E931CB412BA00E1F10F /* AppDelegate.swift */,
 				969F8E951CB412BA00E1F10F /* ViewController.swift */,
+				969F8EC31CB418EF00E1F10F /* BouncingBall.swift */,
 				969F8E971CB412BA00E1F10F /* Main.storyboard */,
 				969F8E9A1CB412BA00E1F10F /* Assets.xcassets */,
 				969F8E9C1CB412BA00E1F10F /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969F8EC41CB418EF00E1F10F /* BouncingBall.swift in Sources */,
 				969F8E961CB412BA00E1F10F /* ViewController.swift in Sources */,
 				969F8E941CB412BA00E1F10F /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +488,7 @@
 				969F8EBA1CB412BA00E1F10F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		969F8EBB1CB412BA00E1F10F /* Build configuration list for PBXNativeTarget "AppendBallzTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				969F8EBD1CB412BA00E1F10F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		969F8EBE1CB412BA00E1F10F /* Build configuration list for PBXNativeTarget "AppendBallzUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				969F8EC01CB412BA00E1F10F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
