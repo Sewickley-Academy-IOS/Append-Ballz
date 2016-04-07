@@ -30,8 +30,8 @@ class ViewController: UIViewController {
     }
     
     func PlayGame(){
-        ball1.BallMoves()
         ball1.Intersections(Board)
+        ball1.BallMoves()
         ball1.center.y = CGFloat(ball1.y)
     }
 

@@ -16,13 +16,14 @@ class BouncingBall: UIImageView {
     
     func BallMoves(){
         speed = speed + gravity
+        print(speed)
         y += speed
     }
 
     func Intersections (ant: UIImageView){
         if (CGRectIntersectsRect(ant.frame, self.frame)){
             speed *= -1
-            y -= 5
+            y -= 10
         }
     }
 }
