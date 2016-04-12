@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGh-6U-II7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-425" y="1139"/>
+            <point key="canvasLocation" x="-425" y="1162"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -122,13 +122,19 @@
                     </view>
                     <connections>
                         <outlet property="Board" destination="oyH-ii-szx" id="8nw-BD-1c5"/>
-                        <outlet property="ball1" destination="cwf-ci-LUz" id="xJ8-Gg-JHT"/>
+                        <outlet property="ball1" destination="cwf-ci-LUz" id="g7k-Wi-5ak"/>
+                        <outlet property="paddle" destination="oyH-ii-szx" id="cxm-qg-Jne"/>
+                        <outlet property="panRecognizer" destination="UmJ-lw-tus" id="nYW-nN-wLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="UmJ-lw-tus"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="UmJ-lw-tus">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="pXs-yE-NrD"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="281" y="387"/>
+            <point key="canvasLocation" x="361" y="387"/>
         </scene>
     </scenes>
     <resources>

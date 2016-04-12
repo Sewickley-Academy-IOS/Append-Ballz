@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var ball1: BouncingBall!
+    
+    @IBOutlet var panRecognizer: UIPanGestureRecognizer!
+    @IBOutlet weak var paddle: UIImageView!
 
     @IBOutlet weak var Board: UIImageView!
     
@@ -22,8 +24,15 @@ class ViewController: UIViewController {
         
         theGame = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "PlayGame", userInfo: nil, repeats: true)
         
+        
+        
     }
 
+    @IBAction func handlePan(sender: AnyObject) {
+        
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
