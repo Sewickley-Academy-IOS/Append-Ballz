@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ball1: BouncingBall!
 
-    @IBOutlet weak var Board: UIImageView!
+    @IBOutlet weak var Player: PlayerBoard!
     
     var theGame = NSTimer()
     
@@ -28,12 +28,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     func PlayGame(){
-        ball1.Intersections(Board)
+        Player.center.y = CGFloat(Player.y)
+        Player.center.x = CGFloat(Player.x)
+        ball1.Intersections(Player)
         ball1.BallMoves()
-        ball1.center.y = CGFloat(ball1.y)
+        Player.center.y = CGFloat(Player.y)
+        Player.center.x = CGFloat(Player.x)
     }
-
 }
 
