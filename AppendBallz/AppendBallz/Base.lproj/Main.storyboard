@@ -142,7 +142,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="Board" destination="oyH-ii-szx" id="8nw-BD-1c5"/>
+                        <outlet property="Player" destination="oyH-ii-szx" id="83L-qZ-r7o"/>
                         <outlet property="ball1" destination="cwf-ci-LUz" id="xJ8-Gg-JHT"/>
                     </connections>
                 </viewController>
