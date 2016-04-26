@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         theGame = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "PlayGame", userInfo: nil, repeats: true)
         
     }
+    @IBAction func Left(sender: AnyObject) {
+        Player.MovePlayer(false)
+    }
+    @IBAction func Right(sender: AnyObject) {
+        Player.MovePlayer(true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

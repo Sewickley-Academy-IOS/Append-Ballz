@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hxq-b0-HcT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hxq-b0-HcT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +19,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BallzBackground" translatesAutoresizingMaskIntoConstraints="NO" id="iiz-dO-9Jz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-S8-i8b">
                                 <rect key="frame" x="229" y="294" width="142" height="67"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.99022798810000001" blue="0.97227848039999998" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Credits">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,7 +30,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43T-Cg-QZx">
                                 <rect key="frame" x="229" y="204" width="142" height="67"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.99022798805436962" blue="0.97227848036936693" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="142" id="Eh9-pF-uSE"/>
@@ -47,7 +44,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Chs-S8-i8b" firstAttribute="centerX" secondItem="iiz-dO-9Jz" secondAttribute="centerX" id="71O-is-MFr"/>
@@ -78,7 +74,6 @@
                     <view key="view" contentMode="scaleToFill" id="kE6-JM-U0X">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -98,25 +93,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnL-aU-U9O">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnL-aU-U9O">
                                 <rect key="frame" x="0.0" y="423" width="300" height="133"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.41295778751373291" green="0.9346962571144104" blue="0.89838176965713501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5e-WP-xgM"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-ii-szx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-ii-szx" customClass="PlayerBoard" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="225" y="406" width="150" height="12"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-ci-LUz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="290" y="28" width="20" height="20"/>
-                                <animations/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-4W-lqz">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-4W-lqz">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Qv9-T5-8YG"/>
@@ -129,17 +123,26 @@
                                 </items>
                                 <color key="barTintColor" red="1" green="0.55044317212180605" blue="0.93972584467093379" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUt-7A-A1R">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUt-7A-A1R">
                                 <rect key="frame" x="300" y="423" width="300" height="133"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.93059724569320679" green="0.27452105283737183" blue="0.18561512231826782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Right">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wn3-Uz-yoI"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uUt-7A-A1R" firstAttribute="leading" secondItem="FnL-aU-U9O" secondAttribute="trailing" id="FtR-u3-SqU"/>
+                            <constraint firstItem="FnL-aU-U9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RHc-L9-BIN"/>
+                            <constraint firstItem="uUt-7A-A1R" firstAttribute="width" secondItem="FnL-aU-U9O" secondAttribute="width" id="SuD-vl-X4A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uUt-7A-A1R" secondAttribute="trailing" id="f4u-y6-L7K"/>
+                            <constraint firstItem="eCP-4W-lqz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rly-rG-WnA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eCP-4W-lqz" secondAttribute="trailing" constant="-20" id="x8J-QP-zd0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Player" destination="oyH-ii-szx" id="83L-qZ-r7o"/>
