@@ -106,9 +106,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-ii-szx" customClass="PlayerBoard" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="225" y="406" width="150" height="12"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-ci-LUz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
-                                <rect key="frame" x="290" y="28" width="20" height="20"/>
-                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-4W-lqz">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -133,6 +130,9 @@
                                     <action selector="Right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wn3-Uz-yoI"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-ci-LUz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                                <rect key="frame" x="280" y="28" width="20" height="20"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
