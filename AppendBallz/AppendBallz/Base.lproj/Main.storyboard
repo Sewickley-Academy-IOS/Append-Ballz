@@ -93,20 +93,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnL-aU-U9O">
-                                <rect key="frame" x="0.0" y="423" width="300" height="133"/>
-                                <color key="backgroundColor" red="0.41295778751373291" green="0.9346962571144104" blue="0.89838176965713501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Left">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5e-WP-xgM"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-ii-szx" customClass="PlayerBoard" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="225" y="406" width="150" height="12"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-4W-lqz">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-4W-lqz">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
@@ -120,32 +110,26 @@
                                 </items>
                                 <color key="barTintColor" red="1" green="0.55044317212180605" blue="0.93972584467093379" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUt-7A-A1R">
-                                <rect key="frame" x="300" y="423" width="300" height="133"/>
-                                <color key="backgroundColor" red="0.93059724569320679" green="0.27452105283737183" blue="0.18561512231826782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Right">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wn3-Uz-yoI"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-ci-LUz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="280" y="28" width="20" height="20"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBL-WC-28T">
+                                <rect key="frame" x="20" y="20" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uUt-7A-A1R" firstAttribute="leading" secondItem="FnL-aU-U9O" secondAttribute="trailing" id="FtR-u3-SqU"/>
-                            <constraint firstItem="FnL-aU-U9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RHc-L9-BIN"/>
-                            <constraint firstItem="uUt-7A-A1R" firstAttribute="width" secondItem="FnL-aU-U9O" secondAttribute="width" id="SuD-vl-X4A"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uUt-7A-A1R" secondAttribute="trailing" id="f4u-y6-L7K"/>
                             <constraint firstItem="eCP-4W-lqz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rly-rG-WnA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eCP-4W-lqz" secondAttribute="trailing" constant="-20" id="x8J-QP-zd0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eCP-4W-lqz" secondAttribute="bottom" id="yx2-Ta-OjW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Player" destination="oyH-ii-szx" id="83L-qZ-r7o"/>
+                        <outlet property="ScoreLabel" destination="LBL-WC-28T" id="khD-64-RPK"/>
                         <outlet property="ball1" destination="cwf-ci-LUz" id="xJ8-Gg-JHT"/>
                     </connections>
                 </viewController>

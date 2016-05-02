@@ -10,7 +10,7 @@ import UIKit
 
 class PlayerBoard: UIImageView {
     var x = 100.0
-    var y = 350.0
+    var y = 550.0
     func MovePlayer(right: Bool){
         if (right){
             x += 5
