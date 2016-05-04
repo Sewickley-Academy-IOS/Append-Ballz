@@ -24,6 +24,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.75272005890000004" green="0.75272005890000004" blue="0.75272005890000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="HqY-gQ-Gnr" kind="showDetail" id="zIr-YF-R45"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="43T-Cg-QZx">
                                 <rect key="frame" x="89" y="204" width="142" height="67"/>
@@ -52,6 +55,29 @@
                     <view key="view" contentMode="scaleToFill" id="kE6-JM-U0X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BallzBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-QM-OGx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" backIndicatorTransitionMaskImage="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="4J7-yJ-g3F">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Credits" id="dPj-s5-jOc">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="7m6-Wr-BRi">
+                                            <connections>
+                                                <segue destination="Hxq-b0-HcT" kind="showDetail" id="b2c-Er-2bn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Well, none of us really did much, but Jason definitely did something. ~Louis &amp; Maxi" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-KC-Yca">
+                                <rect key="frame" x="85" y="128" width="454" height="58"/>
+                                <color key="backgroundColor" red="0.75272005890000004" green="0.75272005890000004" blue="0.75272005890000004" alpha="0.5587061600719424" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -136,4 +162,7 @@
         <image name="BallzBackground" width="541" height="681"/>
         <image name="ballz" width="500" height="500"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="b2c-Er-2bn"/>
+    </inferredMetricsTieBreakers>
 </document>
