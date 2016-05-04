@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var ToolBar: UIToolbar!
-    //
+    
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBOutlet weak var ball1: BouncingBall!
@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var gameOverLabel: UILabel!
     
     @IBOutlet weak var playAgainButton: UIButton!
+    
+    var AppendBallz: [BouncingBall] = []
     
     var Score = 0
     
