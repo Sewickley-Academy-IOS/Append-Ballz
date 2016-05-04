@@ -93,7 +93,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Well, none of us really did much, but Jason definitely did something. ~Louis &amp; Max" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-KC-Yca">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Well, none of us really did much, but Jason definitely did something. ~Louis &amp; Maxi" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-KC-Yca">
                                 <rect key="frame" x="85" y="128" width="454" height="58"/>
                                 <color key="backgroundColor" red="0.75272005890000004" green="0.75272005890000004" blue="0.75272005890000004" alpha="0.5587061600719424" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
