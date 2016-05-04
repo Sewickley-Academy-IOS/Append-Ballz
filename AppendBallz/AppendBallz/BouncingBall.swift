@@ -11,7 +11,7 @@ import UIKit
 class BouncingBall: UIImageView {
     let gravity = 0.09
     var speed = 0.0
-    var x = 100.0
+    var x = 75.0
     var y = 50.0
     
     func BallMoves(){
@@ -26,7 +26,11 @@ class BouncingBall: UIImageView {
 
     func ResetBall(){
         speed = 0
-        y = 50
+        y = Double(-1 * Int(arc4random_uniform(200)))
+    }
+    func ResetBall(level: Int){
+        x = Double(level) * x
+        y = Double(-1 * Int(arc4random_uniform(200)))
     }
     
     func Intersections (ant: UIImageView) -> Bool{
