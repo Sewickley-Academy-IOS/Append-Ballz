@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ToolBar.center.y = CGRectGetMaxY(view.frame)
+        ToolBar.center.y = CGRectGetMaxY(view.frame)-10
         // Do any additional setup after loading the view, typically from a nib.
         
         AppendBallz.append(ball1)
