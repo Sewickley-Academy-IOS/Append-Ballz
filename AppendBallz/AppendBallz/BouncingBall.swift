@@ -14,13 +14,16 @@ class BouncingBall: UIImageView {
     var x = 100.0
     var y = 50.0
     
-    func BallMoves(){
+    func BallMoves() -> Bool{
         speed = speed + gravity
         y += speed
         self.center.y = CGFloat(y)
         self.center.x = CGFloat(x)
         if (y > 850){
+            return true
             ResetBall()
+        }else{
+            return false
         }
     }
 

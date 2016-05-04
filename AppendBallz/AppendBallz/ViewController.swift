@@ -16,7 +16,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Player: PlayerBoard!
     
+    @IBOutlet weak var gameOverLabel: UILabel!
+    
+    @IBOutlet weak var playAgainButton: UIButton!
+    
     var Score = 0
+    
+    var BallMoves = false
     
     var theGame = NSTimer()
     
@@ -43,13 +49,21 @@ class ViewController: UIViewController {
 
     
     func PlayGame(){
+        
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
         if (ball1.Intersections(Player)){
             Score += 1
             ScoreLabel.text = "Score: " + String(Score)
         }
-        ball1.BallMoves()
+        if(ball1.BallMoves() == true){
+            playAgainButton.hidden = false
+            gameOverLabel.hidden = false
+        }
+        if(ball1.BallMoves() == false){
+            playAgainButton.hidden = true
+            gameOverLabel.hidden = true
+        }
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
     }
