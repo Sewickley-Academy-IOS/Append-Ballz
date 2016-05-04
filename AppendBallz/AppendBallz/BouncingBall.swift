@@ -10,13 +10,15 @@ import UIKit
 
 class BouncingBall: UIImageView {
     let gravity = 0.09
-    var speed = 0.0
+    var speedY = 0.0
+    var speedX = 0.1
     var x = 100.0
     var y = 50.0
     
     func BallMoves(){
-        speed = speed + gravity
-        y += speed
+        
+        speedY = speedY + gravity
+        y += speedY
         self.center.y = CGFloat(y)
         self.center.x = CGFloat(x)
         if (y > 850){
@@ -25,13 +27,13 @@ class BouncingBall: UIImageView {
     }
 
     func ResetBall(){
-        speed = 0
+        speedY = 0
         y = 50
     }
     
-    func Intersections (ant: UIImageView) -> Bool{
-        if (CGRectIntersectsRect(ant.frame, self.frame)){
-            speed *= -1
+    func Intersections (ball: UIImageView) -> Bool{
+        if (CGRectIntersectsRect(ball.frame, self.frame)){
+            speedY *= -1
             y -= 5
             return true
         }
