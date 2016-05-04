@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var ToolBar: UIToolbar!
+    
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBOutlet weak var ball1: BouncingBall!
@@ -20,14 +22,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Player: PlayerBoard!
     
+    var AppendBallz: [BouncingBall] = []
+    
     var Score = 0
     
     var theGame = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ToolBar.center.y = CGRectGetMaxY(view.frame)-10
         // Do any additional setup after loading the view, typically from a nib.
         
+        AppendBallz.append(ball1)
+        AppendBallz.append(ball2)
+        AppendBallz.append(ball3)
+        AppendBallz.append(ball4)
+        AppendBallz.append(ball5)
+        for n in 0...4{
+            AppendBallz[n].ResetBall(n+1)
+        }
         theGame = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "PlayGame", userInfo: nil, repeats: true)
         
     }
@@ -49,11 +63,13 @@ class ViewController: UIViewController {
     func PlayGame(){
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
-        if (ball1.Intersections(Player)){
-            Score += 1
-            ScoreLabel.text = "Score: " + String(Score)
+        for n in 0...4{
+            if (AppendBallz[n].Intersections(Player)){
+                Score += 1
+                ScoreLabel.text = "Score: " + String(Score)
+            }
+            AppendBallz[n].BallMoves()
         }
-        ball1.BallMoves()
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
     }

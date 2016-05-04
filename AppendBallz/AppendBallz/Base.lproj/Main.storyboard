@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hxq-b0-HcT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Hxq-b0-HcT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="g8M-qo-Pq7">
             <objects>
                 <viewController id="Hxq-b0-HcT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LLT-y0-1Te"/>
-                        <viewControllerLayoutGuide type="bottom" id="jx6-GQ-sI1"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3nm-X2-eEN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BallzBackground" translatesAutoresizingMaskIntoConstraints="NO" id="iiz-dO-9Jz">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BallzBackground" id="iiz-dO-9Jz">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-S8-i8b">
-                                <rect key="frame" x="229" y="294" width="142" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Chs-S8-i8b">
+                                <rect key="frame" x="89" y="294" width="142" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99022798810000001" blue="0.97227848039999998" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Credits">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -31,51 +28,32 @@
                                     <segue destination="HqY-gQ-Gnr" kind="showDetail" id="zIr-YF-R45"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43T-Cg-QZx">
-                                <rect key="frame" x="229" y="204" width="142" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="43T-Cg-QZx">
+                                <rect key="frame" x="89" y="204" width="142" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99022798805436962" blue="0.97227848036936693" alpha="0.5" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="Eh9-pF-uSE"/>
-                                    <constraint firstAttribute="height" constant="67" id="cVP-mD-ZsE"/>
-                                </constraints>
                                 <state key="normal" title="Play Game">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.75272005890052363" green="0.75272005890052363" blue="0.75272005890052363" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="JDI-9D-hFD"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="JDI-9D-hFD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Chs-S8-i8b" firstAttribute="centerX" secondItem="iiz-dO-9Jz" secondAttribute="centerX" id="71O-is-MFr"/>
-                            <constraint firstItem="43T-Cg-QZx" firstAttribute="trailing" secondItem="Chs-S8-i8b" secondAttribute="trailing" id="8nN-KM-CnG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iiz-dO-9Jz" secondAttribute="trailing" constant="-20" id="Aut-1u-fFd"/>
-                            <constraint firstItem="43T-Cg-QZx" firstAttribute="leading" secondItem="Chs-S8-i8b" secondAttribute="leading" id="MNE-vx-XjW"/>
-                            <constraint firstItem="iiz-dO-9Jz" firstAttribute="top" secondItem="3nm-X2-eEN" secondAttribute="topMargin" id="bh1-MM-feu"/>
-                            <constraint firstItem="jx6-GQ-sI1" firstAttribute="top" secondItem="iiz-dO-9Jz" secondAttribute="bottom" id="ckg-Bt-Ji0"/>
-                            <constraint firstItem="jx6-GQ-sI1" firstAttribute="top" secondItem="Chs-S8-i8b" secondAttribute="bottom" constant="239" id="i41-qW-qwn"/>
-                            <constraint firstItem="43T-Cg-QZx" firstAttribute="top" secondItem="LLT-y0-1Te" secondAttribute="bottom" constant="184" id="jVp-2Y-gQD"/>
-                            <constraint firstItem="iiz-dO-9Jz" firstAttribute="leading" secondItem="3nm-X2-eEN" secondAttribute="leadingMargin" constant="-20" id="kqp-vO-d7u"/>
-                            <constraint firstItem="Chs-S8-i8b" firstAttribute="top" secondItem="43T-Cg-QZx" secondAttribute="bottom" constant="23" id="uSL-PR-xtK"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Prv-ci-vqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-425" y="387"/>
+            <point key="canvasLocation" x="-226.66666666666666" y="366.36000000000001"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yqD-D0-bLq">
             <objects>
                 <viewController id="HqY-gQ-Gnr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rsC-oN-9CO"/>
-                        <viewControllerLayoutGuide type="bottom" id="A5f-8N-RYw"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kE6-JM-U0X">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BallzBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-QM-OGx">
@@ -105,69 +83,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGh-6U-II7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-425" y="1139"/>
+            <point key="canvasLocation" x="-226.66666666666666" y="1078.2533333333333"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppendBallz" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-ii-szx" customClass="PlayerBoard" customModule="AppendBallz" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballz" id="oyH-ii-szx" customClass="PlayerBoard" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="225" y="406" width="150" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-4W-lqz">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eCP-4W-lqz">
+                                <rect key="frame" x="-4" y="524" width="328" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Qv9-T5-8YG"/>
                                     <barButtonItem title="Back to Main Menu" id="psU-JU-nRB">
                                         <connections>
-                                            <segue destination="Hxq-b0-HcT" kind="showDetail" id="KJL-VE-dnd"/>
+                                            <segue destination="Hxq-b0-HcT" kind="modal" id="KJL-VE-dnd"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="sfT-TG-uja"/>
                                 </items>
                                 <color key="barTintColor" red="1" green="0.55044317212180605" blue="0.93972584467093379" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-ci-LUz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballz" id="cwf-ci-LUz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="280" y="28" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBL-WC-28T">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LBL-WC-28T">
                                 <rect key="frame" x="20" y="20" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="7Jz-ue-8V4" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballz" id="7Jz-ue-8V4" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="225" y="28" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="yV9-Ce-SmC" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballz" id="yV9-Ce-SmC" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="175" y="28" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="vfs-CT-St4" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballz" id="vfs-CT-St4" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="132" y="28" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="9W0-H8-Av1" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballz" id="9W0-H8-Av1" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="99" y="28" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="eCP-4W-lqz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rly-rG-WnA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eCP-4W-lqz" secondAttribute="trailing" constant="-20" id="x8J-QP-zd0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eCP-4W-lqz" secondAttribute="bottom" id="yx2-Ta-OjW"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Player" destination="oyH-ii-szx" id="83L-qZ-r7o"/>
                         <outlet property="ScoreLabel" destination="LBL-WC-28T" id="khD-64-RPK"/>
+                        <outlet property="ToolBar" destination="eCP-4W-lqz" id="UFA-hD-cUN"/>
                         <outlet property="ball1" destination="cwf-ci-LUz" id="xJ8-Gg-JHT"/>
                         <outlet property="ball2" destination="7Jz-ue-8V4" id="0w5-qN-c9J"/>
                         <outlet property="ball3" destination="yV9-Ce-SmC" id="dbe-TT-cbw"/>
@@ -177,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="387"/>
+            <point key="canvasLocation" x="149.86666666666667" y="366.36000000000001"/>
         </scene>
     </scenes>
     <resources>
