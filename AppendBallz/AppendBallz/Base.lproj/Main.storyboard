@@ -71,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballz" id="oyH-ii-szx" customClass="PlayerBoard" customModule="AppendBallz" customModuleProvider="target">
-                                <rect key="frame" x="225" y="405" width="150" height="12"/>
+                                <rect key="frame" x="225" y="405" width="95" height="12"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eCP-4W-lqz">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="205.86666666666667" y="346.48000000000002"/>
+            <point key="canvasLocation" x="205" y="346"/>
         </scene>
     </scenes>
     <resources>
