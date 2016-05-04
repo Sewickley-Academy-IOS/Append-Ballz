@@ -13,7 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBOutlet weak var ball1: BouncingBall!
-
+    @IBOutlet weak var ball2: BouncingBall!
+    @IBOutlet weak var ball3: BouncingBall!
+    @IBOutlet weak var ball4: BouncingBall!
+    @IBOutlet weak var ball5: BouncingBall!
+    
     @IBOutlet weak var Player: PlayerBoard!
     
     var Score = 0
