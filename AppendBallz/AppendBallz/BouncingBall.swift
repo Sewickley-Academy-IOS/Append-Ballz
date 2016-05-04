@@ -9,7 +9,7 @@
 import UIKit
 
 class BouncingBall: UIImageView {
-    let gravity = 0.09
+    let gravity = 0.02
     var speed = 0.0
     var x = 75.0
     var y = 50.0
@@ -20,8 +20,8 @@ class BouncingBall: UIImageView {
         self.center.y = CGFloat(y)
         self.center.x = CGFloat(x)
         if (y > 850){
-            return true
             ResetBall()
+            return true
         }else{
             return false
         }

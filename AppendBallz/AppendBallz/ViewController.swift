@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playAgainButton: UIButton!
     
+    var AppendBallz: [BouncingBall] = []
+    
     var Score = 0
     
     var BallMoves = false
@@ -74,14 +76,14 @@ class ViewController: UIViewController {
                 ScoreLabel.text = "Score: " + String(Score)
             }
             AppendBallz[n].BallMoves()
-        }
-        if(ball1.BallMoves() == true){
-            playAgainButton.hidden = false
-            gameOverLabel.hidden = false
-        }
-        if(ball1.BallMoves() == false){
-            playAgainButton.hidden = true
-            gameOverLabel.hidden = true
+            if(AppendBallz[n].BallMoves() == true){
+                playAgainButton.hidden = false
+                gameOverLabel.hidden = false
+            }
+            if(AppendBallz[n].BallMoves() == false){
+                playAgainButton.hidden = true
+                gameOverLabel.hidden = true
+            }
         }
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
