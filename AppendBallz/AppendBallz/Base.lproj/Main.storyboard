@@ -145,6 +145,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="7Jz-ue-8V4" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                                <rect key="frame" x="225" y="28" width="20" height="20"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="yV9-Ce-SmC" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                                <rect key="frame" x="175" y="28" width="20" height="20"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="vfs-CT-St4" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                                <rect key="frame" x="132" y="28" width="20" height="20"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="9W0-H8-Av1" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
+                                <rect key="frame" x="99" y="28" width="20" height="20"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -157,6 +169,10 @@
                         <outlet property="Player" destination="oyH-ii-szx" id="83L-qZ-r7o"/>
                         <outlet property="ScoreLabel" destination="LBL-WC-28T" id="khD-64-RPK"/>
                         <outlet property="ball1" destination="cwf-ci-LUz" id="xJ8-Gg-JHT"/>
+                        <outlet property="ball2" destination="7Jz-ue-8V4" id="0w5-qN-c9J"/>
+                        <outlet property="ball3" destination="yV9-Ce-SmC" id="dbe-TT-cbw"/>
+                        <outlet property="ball4" destination="vfs-CT-St4" id="TsV-j8-pJn"/>
+                        <outlet property="ball5" destination="9W0-H8-Av1" id="NvP-vV-1VD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
