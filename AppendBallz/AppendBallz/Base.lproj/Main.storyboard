@@ -75,32 +75,7 @@
                     <view key="view" contentMode="scaleToFill" id="kE6-JM-U0X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BallzBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-QM-OGx">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" backIndicatorTransitionMaskImage="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="4J7-yJ-g3F">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Credits" id="dPj-s5-jOc">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="7m6-Wr-BRi">
-                                            <connections>
-                                                <segue destination="Hxq-b0-HcT" kind="showDetail" id="b2c-Er-2bn"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Well, none of us really did much, but Jason definitely did something. ~Louis &amp; Maxi" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-KC-Yca">
-                                <rect key="frame" x="85" y="128" width="454" height="58"/>
-                                <color key="backgroundColor" red="0.75272005890000004" green="0.75272005890000004" blue="0.75272005890000004" alpha="0.5587061600719424" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="5po-ns-RqD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kLE-KC-Yca" firstAttribute="top" secondItem="4J7-yJ-g3F" secondAttribute="bottom" constant="84" id="S2d-fZ-sOK"/>

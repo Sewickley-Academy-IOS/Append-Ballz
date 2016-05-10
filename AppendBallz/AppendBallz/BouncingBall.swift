@@ -9,17 +9,16 @@
 import UIKit
 
 class BouncingBall: UIImageView {
-    let gravity = 0.09
-    var speedY = 0.0
-    var speedX = 0.1
-    var x = 100.0
+    var gravity = 0.00
+    let g = 0.02
+    var speed = 0.0
+    var x = 75.0
     var y = 50.0
     var horizontal = 0
     
-    func BallMoves(){
-        
-        speedY = speedY + gravity
-        y += speedY
+    func BallMoves() -> Bool{
+        speed = speed + gravity
+        y += speed
         self.center.y = CGFloat(y)
         self.center.x += CGFloat(arc4random_uniform(6)) + 1
             if (y > 850){
@@ -28,16 +27,22 @@ class BouncingBall: UIImageView {
         }else{
             return false
         }
-    }//
+    }
 
     func ResetBall(){
-        speedY = 0
-        y = 50
+        speed = 0
+        y = Double(-1 * Int(arc4random_uniform(200)))
     }
-    
-    func Intersections (ball: UIImageView) -> Bool{
-        if (CGRectIntersectsRect(ball.frame, self.frame)){
-            speedY *= -1
+    func ResetBall(level: Int){
+        x = Double(level) * x
+        y = Double(-1 * Int(arc4random_uniform(200)))
+    }
+    func BallMove (){
+        gravity = g
+    }
+    func Intersections (ant: UIImageView) -> Bool{
+        if (CGRectIntersectsRect(ant.frame, self.frame)){
+            speed *= -1
             y -= 5
             return true
         }
