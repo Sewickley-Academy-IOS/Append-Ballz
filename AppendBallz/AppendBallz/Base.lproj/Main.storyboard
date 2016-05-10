@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hxq-b0-HcT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hxq-b0-HcT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,14 +20,12 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BallzBackground" translatesAutoresizingMaskIntoConstraints="NO" id="iiz-dO-9Jz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="gJ5-5d-aax"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-S8-i8b">
                                 <rect key="frame" x="229" y="294" width="142" height="67"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.99022798810000001" blue="0.97227848039999998" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Credits">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,7 +37,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43T-Cg-QZx">
                                 <rect key="frame" x="229" y="204" width="142" height="67"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.99022798805436962" blue="0.97227848036936693" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Play Game">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,7 +47,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="iiz-dO-9Jz" secondAttribute="bottom" constant="-32" id="FJH-pw-xlG"/>
@@ -75,13 +72,9 @@
                     <view key="view" contentMode="scaleToFill" id="kE6-JM-U0X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kLE-KC-Yca" firstAttribute="top" secondItem="4J7-yJ-g3F" secondAttribute="bottom" constant="84" id="S2d-fZ-sOK"/>
-                            <constraint firstItem="A5f-8N-RYw" firstAttribute="top" secondItem="kLE-KC-Yca" secondAttribute="bottom" constant="414" id="cNq-pn-vnG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kLE-KC-Yca" secondAttribute="trailing" constant="41" id="oqO-4U-uPf"/>
-                            <constraint firstItem="kLE-KC-Yca" firstAttribute="leading" secondItem="kE6-JM-U0X" secondAttribute="leadingMargin" constant="65" id="wNy-fT-JL8"/>
+                            <constraint firstAttribute="leading" secondItem="kE6-JM-U0X" secondAttribute="leadingMargin" constant="65" id="wNy-fT-JL8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -103,34 +96,27 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-ii-szx" customClass="PlayerBoard" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="225" y="405" width="95" height="12"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="f4D-uH-WAY" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="308" y="22" width="20" height="20"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="CbL-HS-U8O" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="318" y="57" width="20" height="20"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="Ck1-Ng-kEc" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="362" y="57" width="20" height="20"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-Ud-VHz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="386" y="22" width="20" height="20"/>
-                                <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBL-WC-28T">
                                 <rect key="frame" x="20" y="19" width="104" height="21"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="!!!GAME OVER!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6K-Nd-q24">
                                 <rect key="frame" x="108" y="108" width="386" height="146"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.13532031214746898" green="1" blue="0.64859653523988525" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="54"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -138,7 +124,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhQ-4m-971">
                                 <rect key="frame" x="165" y="289" width="271" height="99"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.094384239432281358" green="0.67096067728042574" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Play Again">
@@ -150,11 +135,9 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballz" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-ci-LUz" customClass="BouncingBall" customModule="AppendBallz" customModuleProvider="target">
                                 <rect key="frame" x="212" y="26" width="20" height="20"/>
-                                <animations/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eCP-4W-lqz">
                                 <rect key="frame" x="0.0" y="544" width="600" height="44"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Qv9-T5-8YG"/>
@@ -168,7 +151,6 @@
                                 <color key="barTintColor" red="1" green="0.55044317212180605" blue="0.93972584467093379" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="eCP-4W-lqz" secondAttribute="trailing" constant="-300" id="3M0-R2-EDs"/>
