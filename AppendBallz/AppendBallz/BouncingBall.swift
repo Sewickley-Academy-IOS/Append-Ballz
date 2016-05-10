@@ -25,7 +25,7 @@ class BouncingBall: UIImageView {
             if (y > 850){
             ResetBall()
         }
-    }
+    }//
 
     func ResetBall(){
         speedY = 0
