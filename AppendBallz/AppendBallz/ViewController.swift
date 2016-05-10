@@ -37,9 +37,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ToolBar.center.y = CGRectGetMaxY(view.frame)-10
+        ToolBar.center.y = CGRectGetMaxY(view.frame) - 50
         // Do any additional setup after loading the view, typically from a nib.
-        
+        ball1.BallMove()
         AppendBallz.append(ball1)
         AppendBallz.append(ball2)
         AppendBallz.append(ball3)
@@ -67,13 +67,23 @@ class ViewController: UIViewController {
 
     
     func PlayGame(){
-        
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
         for n in 0...4{
             if (AppendBallz[n].Intersections(Player)){
                 Score += 1
                 ScoreLabel.text = "Score: " + String(Score)
+                if (Score > 9){
+                    AppendBallz[1].BallMove()
+                }else if (Score > 19){
+                    AppendBallz[2].BallMove()
+                }
+                else if (Score > 29){
+                    AppendBallz[3].BallMove()
+                }
+                else if (Score > 39){
+                    AppendBallz[4].BallMove()
+                }
             }
             AppendBallz[n].BallMoves()
             if(AppendBallz[n].BallMoves() == true){
