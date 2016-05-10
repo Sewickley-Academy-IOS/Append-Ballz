@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     
     var BallMoves = false
     
+    
     var theGame = NSTimer()
     
     override func viewDidLoad() {
@@ -75,17 +76,17 @@ class ViewController: UIViewController {
                 ScoreLabel.text = "Score: " + String(Score)
                 if (Score > 9){
                     AppendBallz[1].BallMove()
-                }else if (Score > 19){
+                }
+                if (Score > 19){
                     AppendBallz[2].BallMove()
                 }
-                else if (Score > 29){
+                if (Score > 29){
                     AppendBallz[3].BallMove()
                 }
-                else if (Score > 39){
+                if (Score > 39){
                     AppendBallz[4].BallMove()
                 }
             }
-            AppendBallz[n].BallMoves()
             if(AppendBallz[n].BallMoves() == true){
                 playAgainButton.hidden = false
                 gameOverLabel.hidden = false
@@ -94,6 +95,19 @@ class ViewController: UIViewController {
                 playAgainButton.hidden = true
                 gameOverLabel.hidden = true
             }
+        }
+        var ENDGAME = true
+        for num in 0...4 {
+            if (AppendBallz[num].gravity != 0){
+                ENDGAME = false
+                break
+            }
+        }
+        if (ENDGAME == true){
+            playAgainButton.hidden = false
+            gameOverLabel.hidden = false
+            theGame.invalidate()
+
         }
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
