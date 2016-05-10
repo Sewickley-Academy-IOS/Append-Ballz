@@ -24,6 +24,9 @@ class BouncingBall: UIImageView {
         self.center.x += CGFloat(arc4random_uniform(6)) + 1
             if (y > 850){
             ResetBall()
+            return true
+        }else{
+            return false
         }
     }//
 

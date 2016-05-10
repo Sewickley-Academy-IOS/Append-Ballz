@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var ToolBar: UIToolbar!
+    
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBOutlet weak var ball1: BouncingBall!
@@ -20,14 +22,32 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Player: PlayerBoard!
     
+    @IBOutlet weak var gameOverLabel: UILabel!
+    
+    @IBOutlet weak var playAgainButton: UIButton!
+    
+    var AppendBallz: [BouncingBall] = []
+    
     var Score = 0
+    
+    var BallMoves = false
     
     var theGame = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        ToolBar.center.y = CGRectGetMaxY(view.frame) - 50
+        // Do any additional setup after loading the view, typically from a nib.
+        ball1.BallMove()
+        AppendBallz.append(ball1)
+        AppendBallz.append(ball2)
+        AppendBallz.append(ball3)
+        AppendBallz.append(ball4)
+        AppendBallz.append(ball5)
+        for n in 0...4{
+            AppendBallz[n].ResetBall(n+1)
+        }
         theGame = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "PlayGame", userInfo: nil, repeats: true)
         
     }
@@ -49,11 +69,32 @@ class ViewController: UIViewController {
     func PlayGame(){
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
-        if (ball1.Intersections(Player)){
-            Score += 1
-            ScoreLabel.text = "Score: " + String(Score)
+        for n in 0...4{
+            if (AppendBallz[n].Intersections(Player)){
+                Score += 1
+                ScoreLabel.text = "Score: " + String(Score)
+                if (Score > 9){
+                    AppendBallz[1].BallMove()
+                }else if (Score > 19){
+                    AppendBallz[2].BallMove()
+                }
+                else if (Score > 29){
+                    AppendBallz[3].BallMove()
+                }
+                else if (Score > 39){
+                    AppendBallz[4].BallMove()
+                }
+            }
+            AppendBallz[n].BallMoves()
+            if(AppendBallz[n].BallMoves() == true){
+                playAgainButton.hidden = false
+                gameOverLabel.hidden = false
+            }
+            if(AppendBallz[n].BallMoves() == false){
+                playAgainButton.hidden = true
+                gameOverLabel.hidden = true
+            }
         }
-        ball1.BallMoves()
         Player.center.y = CGFloat(Player.y)
         Player.center.x = CGFloat(Player.x)
     }
