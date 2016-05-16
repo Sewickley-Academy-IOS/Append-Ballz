@@ -74,16 +74,16 @@ class ViewController: UIViewController {
             if (AppendBallz[n].Intersections(Player)){
                 Score += 1
                 ScoreLabel.text = "Score: " + String(Score)
-                if (Score > 9){
+                if (Score > 6){
                     AppendBallz[1].BallMove()
                 }
-                if (Score > 19){
+                if (Score > 12){
                     AppendBallz[2].BallMove()
                 }
-                if (Score > 29){
+                if (Score > 18){
                     AppendBallz[3].BallMove()
                 }
-                if (Score > 39){
+                if (Score > 24){
                     AppendBallz[4].BallMove()
                 }
             }

@@ -36,7 +36,7 @@ class BouncingBall: UIImageView {
     
     func ResetBall(level: Int){
         x = Double(level) * x
-        y = Double(-1 * Int(arc4random_uniform(200)))
+        y = Double(-1 * Int(arc4random_uniform(200))) - 50.000
     }
     
     func BallMove (){
@@ -47,6 +47,7 @@ class BouncingBall: UIImageView {
         if (CGRectIntersectsRect(ant.frame, self.frame)){
             speed *= -1
             y -= 5
+            gravity = gravity + 0.001
             return true
         }
         return false
