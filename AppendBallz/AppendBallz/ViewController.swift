@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     var AppendBallz: [BouncingBall] = []
     
     var Score = 0
+    //
     
     var BallMoves = false
     
