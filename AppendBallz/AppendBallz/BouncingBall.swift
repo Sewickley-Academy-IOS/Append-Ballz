@@ -49,11 +49,11 @@ class BouncingBall: UIImageView {
     
     func Intersections (ant: UIImageView) -> Bool{
         if (CGRectIntersectsRect(ant.frame, self.frame)){
-            speedx = -0.01 * Double(ant.center.x - self.center.x)
+            speedx = -0.015 * Double(ant.center.x - self.center.x)
             print(speedx)
-            speed *= -1
+            speed *= -1 - 0.05
             y -= 5
-            gravity = gravity + 0.001
+            gravity = gravity + 0.008
             return true
         }
         return false

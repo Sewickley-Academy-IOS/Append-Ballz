@@ -16,6 +16,7 @@
 		969F8EA91CB412BA00E1F10F /* AppendBallzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F8EA81CB412BA00E1F10F /* AppendBallzTests.swift */; };
 		969F8EB41CB412BA00E1F10F /* AppendBallzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F8EB31CB412BA00E1F10F /* AppendBallzUITests.swift */; };
 		969F8EC41CB418EF00E1F10F /* BouncingBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F8EC31CB418EF00E1F10F /* BouncingBall.swift */; };
+		96A5EEE41CECB82F004C6B31 /* homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A5EEE31CECB82F004C6B31 /* homescreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		969F8EB31CB412BA00E1F10F /* AppendBallzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppendBallzUITests.swift; sourceTree = "<group>"; };
 		969F8EB51CB412BA00E1F10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		969F8EC31CB418EF00E1F10F /* BouncingBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncingBall.swift; sourceTree = "<group>"; };
+		96A5EEE31CECB82F004C6B31 /* homescreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homescreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				969F8E951CB412BA00E1F10F /* ViewController.swift */,
 				969F8EC31CB418EF00E1F10F /* BouncingBall.swift */,
 				969F8E971CB412BA00E1F10F /* Main.storyboard */,
+				96A5EEE31CECB82F004C6B31 /* homescreen.swift */,
 				969F8E9A1CB412BA00E1F10F /* Assets.xcassets */,
 				969F8E9C1CB412BA00E1F10F /* LaunchScreen.storyboard */,
 				969F8E9F1CB412BA00E1F10F /* Info.plist */,
@@ -266,6 +269,7 @@
 				9660C5061CB6DEFC0070E958 /* PlayerBoard.swift in Sources */,
 				969F8E961CB412BA00E1F10F /* ViewController.swift in Sources */,
 				969F8E941CB412BA00E1F10F /* AppDelegate.swift in Sources */,
+				96A5EEE41CECB82F004C6B31 /* homescreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
