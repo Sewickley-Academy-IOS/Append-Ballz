@@ -33,6 +33,7 @@ class BouncingBall: UIImageView {
         }
     }
 
+    
     func ResetBall(){
         speed = 0
         gravity = 0
